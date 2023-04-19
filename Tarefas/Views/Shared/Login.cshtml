@@ -1,0 +1,32 @@
+﻿
+
+<div class="login" id="login">
+    <div class="title-login">
+        Faça seu login!
+    </div>
+    <span><i class="fa-regular fa-pen-to-square pointer-login"></i></span>
+    <form class="login_form" asp-action="Auth" asp-controller="Authentication">
+        <label for="name">
+            Usuário:
+            <input type="text" name="nome" id="name" autofocus="" placeholder="JhonyCraig777" required>
+        </label>
+
+        <label for="pwd">
+            Senha:
+            <input type="password" name="senha"  id="pwd" placeholder="********" required>
+
+        </label>
+    <button type="submit" id="btn">Entre</button>
+    </form>
+    <div class="chk">
+        <label for="chk">
+            <input type="checkbox" id="chk">
+            <i id="locker" class="fa-solid fa-lock-open"></i>
+            Mantenha-me logado!
+        </label>
+    </div>
+    <div id="links">
+        <a  asp-action="Cadastro" asp-controller="User">Cadastre-se!</a>
+        <a href="#" class="forgot-pass">Esqueceu a senha?</a>
+    </div>
+</div>

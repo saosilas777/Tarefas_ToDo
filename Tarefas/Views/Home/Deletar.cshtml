@@ -1,0 +1,19 @@
+﻿@model NewTask
+@{
+    ViewData["Title"] = "Tarefas";
+}
+
+
+<div class="row task">
+
+    <h1>Atenção</h1>
+    <p class="p-confirmacao">Deseja deletar a tarefa abaixo?</p>
+
+    <div>
+        <ul class="uls">
+            <li>@Model.Tarefa</li>
+        </ul>
+        <a class="btn btn-danger btn-deletar" asp-route-id="@Model.Id" role="button" asp-action="Remove" asp-controller="Home">Deletar</a> 
+        <a class="btn btn-secondary btn-cancelar" role="button" asp-action="Index" asp-controller="Home">Cancelar</a>
+    </div>
+</div>

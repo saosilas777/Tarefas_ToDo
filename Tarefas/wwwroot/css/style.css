@@ -1,0 +1,171 @@
+body {
+    background-image: linear-gradient(45deg, rgb(57, 57, 255), rgb(255, 181, 181));
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(255, 86, 86);
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.uls li {
+    display: flex;
+    min-width: 100%;
+    max-width: fit-content;
+    min-height: 50px;
+    max-height: fit-content;
+    padding: 5px;
+    font-size: 18px;
+    list-style-type: none;
+    background-color: rgb(53, 134, 255);
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 5px 5px 5px 0;
+
+}
+
+.uls li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.texto {
+    overflow: hidden;
+}
+
+.texto p {
+    word-wrap: break-word;
+    line-break: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.task-finish {
+    text-decoration: line-through;
+
+}
+
+li.task-finish {
+    background-color: #ccc;
+    color: black;
+}
+.containers {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height:90vh;
+    
+}
+.task {
+    width: 60vw;
+    display: flex;
+    margin-top: 50px;
+    overflow: auto;
+
+
+
+}
+.form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+}
+.form input{
+    width:100%
+}
+
+.task > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.uls {
+    
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    
+}
+
+.task form input {
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.task button {
+    display: block;
+    width: 50%;
+}
+#timeNow{
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    margin-right:15px;
+   
+}
+.footer{
+    width:100%;
+    height:60px;
+    background-color: #fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: absolute;
+    bottom:0;
+    z-index:-1;
+}
+.footer p{
+    margin:0 10px 0;
+
+}
+
+.btn-deletar{
+    position:absolute;
+    bottom:100px;
+    width:500px;
+    display:inline-block;
+}
+.btn-cancelar{
+    position:absolute;
+    bottom:50px;
+    width:500px;
+    display:inline-block;
+}
+.btn-criar {
+    position: absolute;
+    Bottom: 30px;
+    width:300px
+}
+#btn-deletar {
+    position: absolute;
+    right: 10px;
+}
+.p-confirmacao{
+    text-align: center;
+    font-weight:bold;
+    font-size:24px;
+}

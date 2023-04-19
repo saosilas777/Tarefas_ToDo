@@ -1,0 +1,31 @@
+@model List<NewTask>
+@{
+    ViewData["Title"] = "Tarefas";
+}
+
+
+<div class="row task">
+
+    <h1>Tarefas do dia!</h1>
+
+    <div>
+        <ul class="uls">
+            @if (Model != null && Model.Any())
+            {
+
+                foreach (NewTask task in Model)
+                {
+                    <li>@task.Tarefa
+                    <a role="button" class="btn btn-danger" id="btn-deletar" asp-route-id="@task.Id" asp-controller="Home" asp-action="Deletar" method="post">Deletar</a>
+                    </li>
+                }
+            }
+
+        </ul>
+    </div>
+
+
+    <div>
+        <a class="btn btn-primary btn-criar" role="button" asp-controller="Home" asp-action="Create">Criar Tarefa</a>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@model User
+
+<div class="login" id="login">
+
+
+
+    <div class="form_sing_up" id="form_sing_up">
+
+        <div id="backLogin" class="backLogin">
+            <span><i class="fa-solid fa-arrow-left"></i></span>
+            <a asp-action="Create" asp-controller="User"><span style="font-size:16px;">Volte para o login!</span></a>
+        </div>
+        <form asp-action="Create" asp-controller="User" method="post" id="signUp">
+            <label for="name">Usuário:</label>
+            <input type="text" asp-for="UserName" id="firstName" placeholder="Jhony">
+            <label for="lastName">Senha:</label>
+            <input type="password" asp-for="Password" id="password" placeholder="*******">
+            <button type="submit" id="signSubmit">Cadastrar!</button>
+        </form>
+    </div>
+</div>

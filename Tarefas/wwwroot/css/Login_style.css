@@ -1,0 +1,286 @@
+/** {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}*/
+
+@media(min-width:360px) {
+
+    .login {
+        position: relative;
+        min-width: 300px;
+        min-height: 450px;
+        background-color: #fff;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-size: 18px;
+    }
+        .login a {
+            text-decoration: none;
+            color:#000;
+            font-size:18px;
+            transition: all .5s;
+        }
+            .login a:hover {
+                color: #00acee;
+            }
+
+            .login_form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+    .title-login {
+        position: absolute;
+        top: 15px;
+    }
+
+    .login input {
+        display: flex;
+        margin: 10px 0;
+        padding: 5px;
+        background-color: #ffffff;
+        border: none;
+        border-bottom: 1px solid rgb(104, 104, 104);
+        box-sizing: border-box;
+    }
+
+    input:focus {
+        border: none;
+        outline: 0;
+        box-shadow: none;
+        border-bottom: 1px solid rgb(104, 104, 104);
+    }
+
+    #pwd {
+        margin-bottom: 0;
+    }
+
+    #btn {
+        width: 60%;
+        height: 42px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #00acee;
+        border: none;
+        margin-top:15px;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+        #btn:hover {
+            color: #000000;
+        }
+
+    .login .chk label {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 0;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .login .chk input {
+        display: none;
+    }
+
+    .captcha {
+        margin-top: 15px;
+    }
+
+        .captcha label {
+            width: 180px;
+            height: 40px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .captcha input {
+            position: relative;
+            margin-right: 10px;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background-color: #00acee;
+            border: none;
+            border-radius: 50%;
+        }
+
+            .captcha input::before {
+                content: '';
+                position: absolute;
+                display: none;
+                top: 25%;
+                left: 25%;
+                width: 8px;
+                height: 8px;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            .captcha input:checked::before {
+                display: block;
+            }
+
+        .captcha i {
+            margin-left: 5px;
+            color: #00acee;
+            text-shadow: 1px 1px 1px black;
+            font-size: 16px;
+        }
+
+    #locker {
+        margin: 5px 10px 0 0;
+        font-size: 20px;
+        color: #00acee;
+    }
+
+    .login label {
+        text-align: center;
+    }
+
+    #links {
+        display: inline-block;
+        position: absolute;
+        bottom: 60px;
+    }
+
+    #cadastro {
+        margin-top: 30px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: end;
+        text-decoration: none;
+        transition: all .5s;
+        padding: 0 10px;
+    }
+    #links .forgot-pass{
+        font-size:16px;
+        padding:0 5px;
+    }
+
+
+
+    .login p {
+        margin-top: 10px;
+    }
+
+    .pointer-login {
+        color: #458dd3;
+        text-shadow: 2px 2px 2px black;
+        font-size: 42px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .form_sing_up {
+        position: relative;
+        min-width: 300px;
+        min-height: 450px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-size: 14px;
+    }
+        .form_sing_up a{
+            text-decoration:none;
+        }
+
+        .title-cadastro {
+            position: absolute;
+            top: 10px;
+            font-size: 24px;
+        }
+
+    #signUp {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-size:20px;
+    }
+
+        #signUp label {
+            width:100%;
+            display:flex;
+            justify-content:start;
+        }
+
+        #signUp input {
+            width: 200px;
+            display: flex;
+            margin: 10px 0;
+            padding: 5px;
+            background-color: #ffffff67;
+            border: none;
+            border-bottom: 1px solid rgb(104, 104, 104);
+            box-sizing: border-box;
+        }
+
+
+        #signUp #signSubmit {
+            width: 150px;
+            padding: 10px;
+            position: absolute;
+            bottom: -100px;
+            background-color: #00acee;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    .form_sing_up .backLogin {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        margin:0;
+        padding:0;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #backLogin {
+       display:flex;
+       flex-direction:column;
+       color:#00acee;
+    }
+        #backLogin .fa-solid {
+            font-size:30px;
+        }
+
+    #signUp #signSubmit {
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: 1px;
+        transition: all .5s;
+    }
+
+        #signUp #signSubmit:hover {
+            color: #000000;
+        }
+}
