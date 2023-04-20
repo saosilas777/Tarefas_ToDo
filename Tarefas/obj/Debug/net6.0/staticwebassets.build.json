@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xgdmK5BXoBdsPWaXZLr4hCJ+oAp8VmafkTp5okvfp4U=",
+  "Hash": "/iltWR9lDuhMlwxj/JavGYO4xjRfop6sh5HMH3v5cic=",
   "Source": "Tarefas",
   "BasePath": "_content/Tarefas",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "Z:\\Tarefas\\Tarefas\\wwwroot\\js\\_Login_script.js",
+      "Identity": "Z:\\Tarefas\\Tarefas\\wwwroot\\js\\Login_script.js",
       "SourceId": "Tarefas",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\Tarefas\\Tarefas\\wwwroot\\",
       "BasePath": "_content/Tarefas",
-      "RelativePath": "js/_Login_script.js",
+      "RelativePath": "js/Login_script.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\_Login_script.js"
+      "OriginalItemSpec": "wwwroot\\js\\Login_script.js"
     },
     {
       "Identity": "Z:\\Tarefas\\Tarefas\\wwwroot\\js\\script.js",

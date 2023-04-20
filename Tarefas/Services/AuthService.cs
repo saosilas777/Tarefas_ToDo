@@ -16,14 +16,15 @@ namespace Tarefas.Services
             var content = HttpHelper.POST(url, Json).Content;
 
            
-
-            if (!content.Contains("Usuário ou senha inválida"))
-            {
-                var _userModel = JsonConvert.DeserializeObject<User>(content);
-                userModel= new User { UserName = login.Nome  };
-                return userModel;
-            }
-            return new User();
+                if (!content.Contains("Usuario não encontrado no banco de dados"))
+                {
+                    //var _userModel = JsonConvert.DeserializeObject<User>(content);
+                    userModel = new User { UserName = login.Nome };
+                    return userModel;
+               }
+            return null;
+           
+           
         }
     }
 }

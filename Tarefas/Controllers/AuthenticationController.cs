@@ -15,18 +15,23 @@ namespace Tarefas.Controllers
             _authService = new AuthService();
         }
 
-        //[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Auth([FromForm] LoginModel login)
         {
             var response = _authService.Authentication(login);
-            if (response.UserName == login.Nome)
-                return RedirectToAction("Index", "Home");
-            return RedirectToAction("Login", "Login", new { response = "Fail" });
+            if (response != null)
+            {
+                if (response.UserName != null && response.Password != null)
+                    return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Login");
+
+            }
+            else
+            {
+                return RedirectToAction("Erro", "Login");
+            }
 
         }
-
-
-
     }
 }

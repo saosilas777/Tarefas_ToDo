@@ -8,15 +8,16 @@
     <form class="login_form" asp-action="Auth" asp-controller="Authentication">
         <label for="name">
             Usuário:
-            <input type="text" name="nome" id="name" autofocus="" placeholder="JhonyCraig777" required>
+            <input type="text" name="nome" id="name" autofocus="" placeholder="JhonyCraig777">
         </label>
 
         <label for="pwd">
             Senha:
-            <input type="password" name="senha"  id="pwd" placeholder="********" required>
+            <input type="password" name="senha"  id="pwd" placeholder="********">
 
         </label>
-    <button type="submit" id="btn">Entre</button>
+    <button type="button" id="btn">Entre</button>
+    <button type="submit" id="btnSubmit" hidden></button>
     </form>
     <div class="chk">
         <label for="chk">

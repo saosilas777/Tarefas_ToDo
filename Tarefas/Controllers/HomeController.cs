@@ -16,7 +16,6 @@ namespace Tarefas.Controllers
         {
             _taskRepository = repository;
         }
-
         public IActionResult Index()
         {
             List<NewTask> tasks = _taskRepository.GetAll();

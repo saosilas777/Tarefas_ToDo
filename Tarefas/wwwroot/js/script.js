@@ -1,30 +1,30 @@
-var $btn = document.getElementById('btn');
-var $addTask = document.querySelector('#addTask');
-var $ul = document.querySelector('.uls');
-var $li = $ul.querySelectorAll('li');
+//var $btn = document.getElementById('btn');
+//var $addTask = document.querySelector('#addTask');
+//var $ul = document.querySelector('.uls');
+///*var $li = $ul.querySelectorAll('.li');*/
 
-var $timeNow =  document.getElementById('timeNow');
+//var $timeNow =  document.getElementById('timeNow');
 
-var date = new Date().toLocaleDateString();
-var time = new Date().toLocaleTimeString('pt-BR',{hour:'numeric', minute:'numeric'} );
-$timeNow.innerHTML = `${date} ${time}`
-
-
-//$addTask.addEventListener('keyup', function(e){
-//    if(e.keyCode === 13){
-//        newTask();
-//    }
-//});
+//var date = new Date().toLocaleDateString();
+//var time = new Date().toLocaleTimeString('pt-BR',{hour:'numeric', minute:'numeric'} );
+//$timeNow.innerHTML = `${date} ${time}`
 
 
-for(var i =0;i<$li.length;i++){
-    addEvent($li[i]);
-}
+////$addTask.addEventListener('keyup', function(e){
+////    if(e.keyCode === 13){
+////        newTask();
+////    }
+////});
 
-function taskFinish(){
-    // debugger
-    this.classList.toggle('task-finish');
-}
+
+//for(var i =0;i<$li.length;i++){
+//    addEvent($li[i]);
+//}
+
+//function taskFinish(){
+//    // debugger
+//    this.classList.toggle('task-finish');
+//}
 
 
 //function newTask(){
@@ -52,8 +52,8 @@ function taskFinish(){
 //    }
     
 //}
-function addEvent(li){
-    li.addEventListener('click', taskFinish);
-}
+//function addEvent(li){
+//    li.addEventListener('click', taskFinish);
+//}
 
 

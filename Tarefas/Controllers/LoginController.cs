@@ -17,6 +17,10 @@ namespace Tarefas.Controllers
         public IActionResult Login()
         {
             return View();
+        } 
+        public IActionResult Erro()
+        {
+            return View();
         }
 
         [HttpPost]
